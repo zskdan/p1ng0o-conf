@@ -1,0 +1,95 @@
+backtick 1 600 0 $HOME/bin/getTransport.pl
+backtick 2 10 0 $HOME/bin/mywho.sh
+#backtick 2 0 0 $HOME/bin/netmon wlan0
+#backtick 3 5 0 $HOME/bin/maildircount -s $HOME/Maildir $HOME/Maildir/.Audrey $HOME/Maildir/.Others $HOME/Maildir/.GMail $HOME/Maildir/.Alten
+#backtick 4 0 0 $HOME/bin/screen-message-receive
+#backtick 6 0 0 $HOME/bin/cpu
+
+hardstatus on
+#hardstatus alwayslastline "%1`%{K}|%6`|%{B}%2` %=%{K}|%{m}$USER@%H%{d}%{K}|%c %d.%m.%Y"
+hardstatus alwayslastline "%1`|%{R}%2` %=%{K}|%{m}$USER@%H%{d}%{K}|%c %d.%m.%Y"
+
+caption always "%{kK}%-w%?%F%{rk}%:%{Kk}%? %n %t %{kK}%+w"
+
+startup_message off
+vbell off
+vbell_msg ""
+
+defscrollback 1024
+
+nethack on
+msgwait 120
+shelltitle "$ |bash"
+
+bind q
+bind s
+
+setenv __htop "screen -t htop 8 htop"
+bind t  eval $__htop
+bind ^V screen vi
+bind ^R source $HOME/.screenrc
+#bind b eval "hardcopy_append off" "hardcopy $HOME/.screen-urlview" "screen $HOME/bin/links2html $HOME/.screen-urlview"
+#bind l eval "screen $HOME/bin/screen-message-send" clear
+#bind ^L eval "screen $HOME/bin/screen-message-send" clear
+
+
+bind - resize -1
+bind + resize +1
+
+# Build
+#bind -c build a at 0 stuff "ws build all"
+#bind -c build d at 0 stuff "ws build drv_sagem"
+#bind -c build g at 0 stuff "ws build gt"
+#bind -c build h at 0 stuff "ws build HAL3"
+#bind -c build l at 0 stuff "ws build linux"
+#bindkey ^B command -c build
+
+# Music
+#setenv __music_window       13
+#setenv __music_path         "/media/iomega/Musique"
+setenv __music_mix_up       "screen amixer set Front 2dB+"
+setenv __music_mix_down     "screen amixer set Front 2dB-"
+#setenv __music_player_pause "at $__music_window stuff \" \""
+#setenv __music_player_prev  "at $__music_window stuff \"<\""
+#setenv __music_player_next  "at $__music_window stuff \">\""
+#setenv __music_player_init  "screen -t music $__music_window bash -c \"cd $__music_path; exec bash\""
+#setenv __music_player_go    "select $__music_window"
+setenv __music_player_pause "screen rhythmbox-client --play-pause"
+setenv __music_player_prev  "screen rhythmbox-client --previous"
+setenv __music_player_next  "screen rhythmbox-client --next"
+
+bind -c music ^Q  eval $__music_mix_up
+bind -c music  q  eval $__music_mix_up
+bind -c music ^A  eval $__music_mix_down
+bind -c music ' ' eval $__music_player_pause
+bind -c music ^P  eval $__music_player_prev
+bind -c music ^N  eval $__music_player_next
+bind -c music ^H  eval $__music_player_init
+bind -c music ^G  eval $__music_player_go
+bind -c music x   stuff 
+bind -c music ^X  stuff 
+bind -c music ^O  stuff 
+bind -c music ^K  stuff 
+bindkey ^X command -c music
+
+# <F2>cmd
+bindkey -t ^[OQhtop eval $__htop
+#bindkey -t ^[OQssh  screen -t stbsh stbsh
+bindkey -t ^[OQrc   screen vi $HOME/.screenrc
+
+termcapinfo xterm* OP
+termcapinfo xterm 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
+
+attrcolor b ".I"
+# defbce "on"
+
+#blankerprg /home/greg/bin/httplogscreensaver
+#idle 180 blanker
+
+#bind b blanker
+#bind ^B blanker
+
+#screen -t mcabber 0 mcabber
+#screen -t mutt 1 mutt
