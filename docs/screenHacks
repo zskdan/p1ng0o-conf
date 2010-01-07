@@ -1,0 +1,23 @@
+echo -e '\e!Zak\e\\' -> pour ecrire un string dans le status de screen
+CTRL-A _             ->
+<C-A> "              -> quel screen utilises-tu ??
+<C-A> :              -> 
+<C-A> ESC            -> remonte les pages dans screen
+<C-U>                -> page up
+<C-D>                -> page down
+Escape               -> Exist mode
+<C-A> p              -> previous screen
+<C-A> n              -> next screen
+defscrollback 1024   -> dans .screenrc taille du buffer
+<C-A> :source ~/.screenrc -> reload of screenrc
+<C-A> S              -> split Horizontal
+<C-A> |              -> split Vertical
+<C-A> H              -> des/active le logging
+<C-A> h              -> screenshot
+ttyrecord/ttyrec pour l'enjeux des ttyplay
+<C-A> ESC            -> passer en mode copy
+Return               -> debut/fin de la selection
+<C-A> ]              -> paste
+backtick 4 2 0 /usr/bin/rhythmbox-client --print-playing  avec %4`  : nom de la chanson 
+<C-A>:resize +1      -> screen split resize
+<C-A>:number <n>     -> changer l'ordre de screen

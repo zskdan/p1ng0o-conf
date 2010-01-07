@@ -1,0 +1,37 @@
+Pour utiliser qemu avec le mode networking tuntap.
+il faut inseré tout d'abord le module noyau tap :
+$ sudo modprobe tap
+et donner l'accès a votre utilisateur si c'est pas root.
+il est toujours recommandé de ne pas utilisé qemu en mode root .
+
+$ sudo tunctl -b -u zakaria
+tap0
+
+après on lance la machine virtuelle comme suit on precisant qu'il faut utilisé le mode tuntap attaché à la nic de la machine virtuelle.
+
+$ qemu -k fr -boot d -cdrom Fedora-10-i386-DVD.iso -hda Fedora.img -net nic,vlan=0 -net tap,vlan=0,ifname=tap0,script=no -m 512
+
+pour connecté la machine virtuelle avec le reseau exterieur, on peut imaginer un bridge :
+
+$ sudo brctl addbr br0
+
+on désactive notre interface reseau du hote pour l'ajouté après à notre bridge :
+
+$ sudo ifconfig eth0 down
+
+on ajoute les interfaces à relier à notre bridge : eth0 interface physique vers le reseau du hote et tap0 l'interface vers la machine virtuelle.
+
+$ sudo brctl addif br0 eth0 tap0
+
+on acquire une adresse ip pour l'interface br0
+
+$ sudo dhclient br0
+
+Dans la machine virtuelle on peut acquirire aussi une adresse ip livré par le server dhcp du reseau exterieur.
+
+# dhclient eth0
+
+Un ping sur internet pour savoir que ça marche !!!
+# ping www.google.fr
+
+

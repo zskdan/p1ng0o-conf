@@ -1,0 +1,11 @@
+# Bash
+realvariable=contents
+ref=realvariable
+echo "${!ref}" 
+!$ pour utiliser le dernier argument de la commande precedante
+
+
+clear && all=$(wc -l rpm.list | cut -d" " -f1); while true; do now=$(wc -l voila2 | cut -d" " -f1 ); i=0 ; while [ $i -lt $(( $now * 100 / $all)) ]; do  printf "#"; i=$(($i+1)) ; done ; printf "$i\r" ; sleep 2 ; done
+
+
+ \n~. pour terminer une session ssh

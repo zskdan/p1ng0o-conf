@@ -1,0 +1,23 @@
+q<letter><commands>q
+<number>@<letter>
+CRTL-R Redo
+ctrl-a increment
+ctrl-x decrement
+K   Go to the man page for the word currently under the cursor
+%   Putting the cursor on a brace, bracket, or parenthese and pressing % will send the cursor to the matching brace, bracket, or parenthese.
+>>    Indent the highlighted code.
+*   Read the string under the cursor and go to the next place it appears
+#   Same as above, except it moves the cursor to the previous occurance.
+ma    Make a bookmark named a at the current cursor position
+`a    Go to bookmark a
+`.    Go to the line that you last edited
+w   Move the cursor forward by a word.
+b   Move the cursor backward by a word.
+0   Move the cursor to the beginning of the current line.
+^   Move the cursor to the first character on the current line.
+$   Move the cursor to the end of the line
+c{motion}   Delete (change) the text moved over by {motion}
+s   Cut the current character
+D   Cut from the cursor to the end of the current line.
+Y   Yank the whole line
+"kyy copy the current line into register k.
