@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<opml version="1.0">
+  <head>
+    <title>Liferea Feed List Export</title>
+  </head>
+  <body>
+    <outline title="lifestyle" text="lifestyle" description="lifestyle" type="folder">
+      <outline title="Vie de merde" text="Vie de merde" description="Vie de merde" type="pie" htmlUrl="http://www.viedemerde.fr" xmlUrl="http://feeds.feedburner.com/viedemerde"/>
+    </outline>
+    <outline title="Sciences" text="Sciences" description="Sciences" type="folder">
+      <outline title="Wired: Science" text="Wired: Science" description="Wired: Science" type="rss" htmlUrl="http://www.wired.com/wiredscience" xmlUrl="http://feeds.wired.com/wired/science"/>
+      <outline title="COSMOS magazine - News" text="COSMOS magazine - News" description="COSMOS magazine - News" type="rss" htmlUrl="http://www.cosmosmagazine.com/taxonomy/term/27/0" xmlUrl="http://www.cosmosmagazine.com/rss/news"/>
+    </outline>
+    <outline title="Ecrans" text="Ecrans" description="Ecrans" type="folder">
+      <outline title="Ecrans" text="Ecrans" description="Ecrans" type="rss" htmlUrl="http://www.ecrans.fr/" xmlUrl="http://www.ecrans.fr/spip.php?page=backend"/>
+    </outline>
+    <outline title="World" text="World" description="World" type="folder">
+      <outline title="CNN.com - World" text="CNN.com - World" description="CNN.com - World" type="rss" htmlUrl="http://www.cnn.com/WORLD/?eref=rss_world" xmlUrl="http://rss.cnn.com/rss/cnn_world.rss"/>
+      <outline title="CNN.com" text="CNN.com" description="CNN.com" type="rss" htmlUrl="http://www.cnn.com/?eref=rss_topstories" xmlUrl="http://rss.cnn.com/rss/cnn_topstories.rss"/>
+    </outline>
+    <outline title="Computers" text="Computers" description="Computers" type="folder">
+      <outline title="GrokLaw" text="GrokLaw" description="GrokLaw" type="rss" htmlUrl="http://www.groklaw.net" xmlUrl="http://www.groklaw.net/backend/GrokLaw.rdf"/>
+      <outline title="Wired: Multimedia" text="Wired: Multimedia" description="Wired: Multimedia" type="rss" htmlUrl="http://www.wired.com/rss/multimedia.xml" xmlUrl="http://feeds.wired.com/wired/multimedia"/>
+      <outline title="Google Sightseeing" text="Google Sightseeing" description="Google Sightseeing" type="rss" htmlUrl="http://googlesightseeing.com" xmlUrl="http://googlesightseeing.com/feed/"/>
+      <outline title="HowStuffWorks Daily Feed" text="HowStuffWorks Daily Feed" description="HowStuffWorks Daily Feed" type="rss" htmlUrl="http://rd.howstuffworks.com/go?url=http://www.howstuffworks.com&amp;mkcpgn=rss1" xmlUrl="http://feeds.howstuffworks.com/DailyStuff"/>
+      <outline title="Wired Top Stories" text="Wired Top Stories" description="Wired Top Stories" type="rss" htmlUrl="http://www.wired.com/rss/index.xml" xmlUrl="http://feeds.wired.com/wired/index"/>
+      <outline title="Ars Technica" text="Ars Technica" description="Ars Technica" type="rss" htmlUrl="http://arstechnica.com/index.php" xmlUrl="http://arstechnica.com/index.rssx"/>
+      <outline title="MAKE Magazine" text="MAKE Magazine" description="MAKE Magazine" type="rss" htmlUrl="http://blog.makezine.com/" xmlUrl="http://blog.makezine.com/index.xml"/>
+      <outline title="Numerama.com - Magazine" text="Numerama.com - Magazine" description="Numerama.com - Magazine" type="rss" htmlUrl="http://www.numerama.com/" xmlUrl="http://feeds.feedburner.com/Numerama-Magazine"/>
+      <outline title="Rue89 | Votre r&#xE9;volution de l'info" text="Rue89 | Votre r&#xE9;volution de l'info" description="Rue89 | Votre r&#xE9;volution de l'info" type="rss" htmlUrl="http://www.rue89.com/" xmlUrl="http://rue89.com/homepage/feed"/>
+      <outline title="Open Source" text="Open Source" description="Open Source" type="folder">
+        <outline title="art.gnome.org" text="art.gnome.org" description="art.gnome.org" htmlUrl="http://art.gnome.org/" xmlUrl="http://art.gnome.org/backend.php"/>
+        <outline title="Gnomefiles" text="Gnomefiles" description="Gnomefiles" type="rss" htmlUrl="http://www.gnomefiles.org" xmlUrl="http://www.gnomefiles.org/files/gnomefiles.rdf"/>
+        <outline title="GNOME Footnotes" text="GNOME Footnotes" description="GNOME Footnotes" type="rss" htmlUrl="http://gnomedesktop.org" xmlUrl="http://www.gnomedesktop.org/backend.php"/>
+        <outline title="Linux.com" text="Linux.com" description="Linux.com" htmlUrl="http://www.linux.com/" xmlUrl="http://www.linux.com/index.rss"/>
+        <outline title="mozillaZine" text="mozillaZine" description="mozillaZine" type="rss" htmlUrl="http://www.mozillazine.org/" xmlUrl="http://www.mozillazine.org/contents.rdf"/>
+        <outline title="Newsforge" text="Newsforge" description="Newsforge" htmlUrl="http://www.newsforge.com" xmlUrl="http://www.newsforge.com/newsforge.rss"/>
+        <outline title="Planet GNOME" text="Planet GNOME" description="Planet GNOME" type="pie" htmlUrl="http://planet.gnome.org/" xmlUrl="http://planet.gnome.org/atom.xml"/>
+        <outline title="Slashdot" text="Slashdot" description="Slashdot" type="rss" htmlUrl="http://slashdot.org/" xmlUrl="http://slashdot.org/slashdot.rss"/>
+        <outline title="TuxMobil" text="TuxMobil" description="TuxMobil" type="rss" htmlUrl="http://tuxmobil.org" xmlUrl="http://tuxmobil.org/tuxmobil_rss.rdf"/>
+        <outline title="DLFP - Journaux" text="DLFP - Journaux" description="DLFP - Journaux" type="rss" htmlUrl="http://linuxfr.org/journal/" xmlUrl="http://linuxfr.org/backend/journaux/rss20.rss"/>
+        <outline title="DLFP - D&#xE9;p&#xEA;ches" text="DLFP - D&#xE9;p&#xEA;ches" description="DLFP - D&#xE9;p&#xEA;ches" type="rss" htmlUrl="http://linuxfr.org/" xmlUrl="http://linuxfr.org/backend/news/rss20.rss"/>
+        <outline title="Slashdot: Developers" text="Slashdot: Developers" description="Slashdot: Developers" type="rss" htmlUrl="http://developers.slashdot.org/" xmlUrl="http://rss.slashdot.org/Slashdot/slashdotDevelopers"/>
+        <outline title="Slashdot" text="Slashdot" description="Slashdot" type="rss" htmlUrl="http://slashdot.org/" xmlUrl="http://rss.slashdot.org/Slashdot/slashdot"/>
+        <outline title="Standblog" text="Standblog" description="Standblog" type="rss" htmlUrl="http://standblog.org/blog/" xmlUrl="http://standblog.org/blog/feed/rss2"/>
+        <outline title="Software" text="Software" description="Software" type="rss" htmlUrl="http://www.linux.com/news/software" xmlUrl="http://www.linux.com/feature/?theme=rss"/>
+        <outline title="Linux for Devices - RSS Feeds" text="Linux for Devices - RSS Feeds" description="Linux for Devices - RSS Feeds" type="rss" htmlUrl="http://www.linuxfordevices.com" xmlUrl="http://www.linuxfordevices.com/rss.xml"/>
+        <outline title="VirtualLogix Press Releases" text="VirtualLogix Press Releases" description="VirtualLogix Press Releases" type="rss" htmlUrl="http://www.virtuallogix.com/" xmlUrl="http://www.virtuallogix.com/fileadmin/template/main/rss/vlx.rss"/>
+        <outline title="Debian" text="Debian" description="Debian" type="folder">
+          <outline title="Debian Package of the Day" text="Debian Package of the Day" description="Debian Package of the Day" type="rss" htmlUrl="http://debaday.debian.net" xmlUrl="http://debaday.debian.net/feed"/>
+          <outline title="Planet Debian" text="Planet Debian" description="Planet Debian" type="rss" htmlUrl="http://planet.debian.org/" xmlUrl="http://planet.debian.org/rss20.xml"/>
+          <outline title="Debian Administration" text="Debian Administration" description="Debian Administration" type="pie" htmlUrl="http://www.debian-administration.org/" xmlUrl="http://www.debian-administration.org/atom.xml"/>
+          <outline title="debian-community.org English language planet" text="debian-community.org English language planet" description="debian-community.org English language planet" type="rss" htmlUrl="http://wiki.debian-community.org/planets/en/" xmlUrl="http://debian-community.org/planets/en/index.rss"/>
+          <outline title="Debian Times" text="Debian Times" description="Debian Times" type="rss" htmlUrl="http://times.debian.net/" xmlUrl="http://times.debian.net/?format=rss20.xml"/>
+          <outline title="Planet Debian" text="Planet Debian" description="Planet Debian" type="rss" htmlUrl="http://planet.debian.org/" xmlUrl="http://planet.debian.org/rss20.xml"/>
+          <outline title="Debian Package a Day" text="Debian Package a Day" description="Debian Package a Day" type="pie" htmlUrl="http://debaday.debian.net" xmlUrl="http://debaday.debian.net/feed/atom/"/>
+        </outline>
+        <outline title="Kernel" text="Kernel" description="Kernel" type="folder">
+          <outline title="KernelTrap" text="KernelTrap" description="KernelTrap" type="rss" htmlUrl="http://kerneltrap.org" xmlUrl="http://kerneltrap.org/node/feed"/>
+          <outline title="LWN.net" text="LWN.net" description="LWN.net" type="rss" htmlUrl="http://lwn.net" xmlUrl="http://lwn.net/headlines/newrss"/>
+        </outline>
+      </outline>
+    </outline>
+  </body>
+</opml>
