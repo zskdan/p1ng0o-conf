@@ -45,13 +45,10 @@ endfunction
 command! GitBlameCurrentLine :call GitBlameCurrentLine()
 map <C-i> :GitBlameCurrentLine<CR>
 
-" some Configurations for MiniBufExplorer plugin
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1
-
 " mapping for Tasklist
 map T :TaskList<CR>
+
+" mapping for taglist
+nnoremap <silent> <F8> :TlistToggle<CR>
 
 set visualbell
