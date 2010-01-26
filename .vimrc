@@ -51,4 +51,7 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
+" mapping for Tasklist
+map T :TaskList<CR>
+
 set visualbell
