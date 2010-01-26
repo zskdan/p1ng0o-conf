@@ -1,0 +1,21 @@
+§
+§ =============================================================
+§ ========== USER MACROS ======================================
+§ =============================================================
+§
+|AUTHOR|    = zskdan 
+|AUTHORREF| = Zakaria ElQotbi
+|EMAIL|     = zakaria.elqotbi@openwide.fr
+|COMPANY|   = OpenWide Paris
+|COPYRIGHT| = Copyright (c) |YEAR|, |AUTHOR|
+§
+§ =============================================================
+§ ========== FILE INCLUDES ====================================
+§ =============================================================
+§
+|includefile| = comments.template
+|includefile| = statements.template
+|includefile| = idioms.template
+|includefile| = pod.template
+§
+§%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
