@@ -2,7 +2,7 @@
 *VT100*foreground: lightgrey
 *VT100*faceName: "DejaVu Mono"
 
-*VT100*faceSize: 7
+*VT100*faceSize: 9
 *VT100*faceSize1: 6
 *VT100*faceSize2: 7
 *VT100*faceSize3: 9
