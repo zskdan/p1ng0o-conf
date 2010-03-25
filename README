@@ -1,0 +1,10 @@
+# Welcom to P1ng0o CONFS
+# TODO for python vim integration 
+# 1 install vimpde plugin
+# "autocmd FileType python set omnifunc=pythoncomplete#Complete" add this line to you vimrc
+
+DEVTOOLS=(
+vim-full
+ctags
+)
+apt-get install $DEVTOOLS[*]
