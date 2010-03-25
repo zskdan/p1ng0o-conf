@@ -1,5 +1,7 @@
-
-
+host home
+  hostname pingoo
+  user zakaria
+  port 2222
 host projects.openwide.fr
   hostname git.projects.openwide.fr
   user zelqotbi
