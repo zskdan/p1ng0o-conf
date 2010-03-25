@@ -113,3 +113,8 @@ GIT_AUTHOR_EMAIL="zakaria.elqotbi@openwide.fr"
 #  screen
 #fi
 
+# loading confs
+for conf in  $HOME/conf/*
+do 
+  source $conf
+done
