@@ -21,3 +21,6 @@ s   Cut the current character
 D   Cut from the cursor to the end of the current line.
 Y   Yank the whole line
 "kyy copy the current line into register k.
+set noignorecase
+do  :diffget 
+dp	:diffput
