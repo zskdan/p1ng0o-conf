@@ -114,7 +114,9 @@ GIT_AUTHOR_EMAIL="zakaria.elqotbi@openwide.fr"
 #fi
 
 # loading confs
-for conf in  $HOME/conf/*
-do 
-  source $conf
-done
+if [ -d "$HOME/conf/scripts"  ]; then
+	for script in  $HOME/conf/scripts/S*
+	do 
+  	source $script
+	done
+fi
