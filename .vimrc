@@ -32,6 +32,7 @@ let g:BASH_AuthorName   = 'Zakaria ElQotbi'
 let g:BASH_AuthorRef    = 'M'
 let g:BASH_Email        = 'zakaria.elqotbi@openwide.fr'
 let g:BASH_Company      = 'OpenWide, Paris'
+let g:sh_fold_enabled		= 1
 
 function! GitBlameCurrentLine()
   let l:line  = line('.')
