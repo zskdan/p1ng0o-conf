@@ -1,0 +1,4 @@
+git rebase -i --abort to intterumpt rebasing "interactive rebase already started"
+git reflog
+git reset --hard HEAD@{n}
+
