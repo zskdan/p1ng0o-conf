@@ -1,0 +1,2 @@
+lsb_release -a to find the version of the distribution 
+rmmod pcspkr:  for disabling pc spkr 
