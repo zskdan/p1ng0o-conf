@@ -24,3 +24,15 @@ Y   Yank the whole line
 set noignorecase
 do  :diffget 
 dp	:diffput
+
+
+#####################
+Modes
+#####################
+hexeditor mode :
+
+vim -b myfile
+[in vi]: %!xxd
+[to return to previous view]: %!xxd -r
+:set list  Show tabs & end of lines 
+
