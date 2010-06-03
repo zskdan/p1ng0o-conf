@@ -53,3 +53,11 @@ map T :TaskList<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
 
 set visualbell
+autocmd FileType c set omnifunc=ccomplete#Complete
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType perl set omnifunc=perlcomplete#Complete
+
