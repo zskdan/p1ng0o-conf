@@ -20,6 +20,15 @@ http://www.faqs.org/docs/bashman/bashref_29.html
 CLEAR && all=$(wc -l rpm.list | cut -d" " -f1); while true; do now=$(wc -l voila2 | cut -d" " -f1 ); i=0 ; while [ $i -lt $(( $now * 100 / $all)) ]; do  printf "#"; i=$(($i+1)) ; done ; printf "$i\r" ; sleep 2 ; done
 
 $(< file)
+
+############################
+Math
+############################
+$[ 3 + 4 + 2 ] == $((3 + 4 + 2))
+let b=10#$a+1   # Force a to be treated as base 10.  Note: the $ is required.
+a=${a/*(0)/} 		#This removes leading zeroes from a, all at once.
+let to make arithmetique
+
 ############################
 History
 ############################
