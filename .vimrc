@@ -13,7 +13,7 @@ set nobackup        " don't back up file before saving
 set autowrite       " automatically save before making
 set history=1000
 
-set expandtab       " turns tabs into spaces
+"set expandtab       " turns tabs into spaces
 set tabstop=2       " number of spaces per tab
 set autoindent
 set smartindent
