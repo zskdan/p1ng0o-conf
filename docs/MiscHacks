@@ -1,2 +1,19 @@
 lsb_release -a to find the version of the distribution 
 rmmod pcspkr:  for disabling pc spkr 
+echo 0 > /proc/sys/kernel/printk for disabling kernel messages
+
+stopwatch : http://www.online-stopwatch.com/online-countdown/  , timer-applet 
+
+to keep track of commands you pass to the console  use script
+
+For the console use "setterm -blank 0" add it to the runme.sh.
+To test it, enter it at the console.
+
+For the X-Server (with gnome and fluxbox) use "xset -dpms s off" add it to the top of /root/.xinitrc
+To test it, enter it at the terminal.
+
+
+disable the bootup kernel messages add to the "append" line in the isolinux.cfg (and similar) the parameter "quiet"
+
+To disable the kernel messages on the console use "setterm -msg off" add it to the runme.sh
+To test it, enter it at the console.

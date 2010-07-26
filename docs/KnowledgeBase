@@ -5,3 +5,7 @@ Vmware Kayboard mapping problem
 http://blogs.unbolt.net/index.php/brinley/2008/11/12/vmware-server-2-0-breaks-keyboard-mappin-10
 
 -- for supporting files biggen with -
+make INSTALL_MOD_PATH=/some/writable/directory modules_install
+echo 0 > /proc/sys/kernel/printk for disable kernel log on console
+CONFIG_BOOT_LINK_OFFSET = set the link address offset of the zImage
+PAGE_OFFSET [=0x80000000] 
