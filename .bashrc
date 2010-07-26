@@ -105,7 +105,7 @@ fi
 
 # User specific aliases and functions
 PS1='\[\e[0;34m\]\133\[\e[m\]\[\e[0;33m\]\u@\h: \W\[\e[m\]\[\e[0;34m\]\135\[\e[m\]\[\e[0;37m\]\$\[\e[m\] '
-PATH=$PATH:~/.binpath/
+PATH=$PATH:~/bin/
 GIT_AUTHOR_NAME="Zakaria ElQotbi"
 GIT_AUTHOR_EMAIL="zakaria.elqotbi@openwide.fr"
 
