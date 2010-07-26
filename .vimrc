@@ -35,21 +35,21 @@ let g:BASH_Company      = 'OpenWide, Paris'
 let g:sh_fold_enabled		= 1
 
 function! SvnBlameCurrentLine()
-  let l:line  = line('.')
-  let l:file  = expand("%:t")
-  let l:wd    = expand("%:p:h")
-  let content = system("cd " . l:wd . ";svn blame " . l:file . " | awk 'NR==" . l:line . "{print}' " .  ' | sed -n -e "s/\s\+\([0-9]\+\)\s\+\(\S\+\).*/\2 (\1)/p"' )
-  let line = split(content, '\n')[0]
-  echohl Type | echo line | echohl None
+	let l:line	= line('.')
+	let l:file	= expand("%:t")
+	let l:wd		= expand("%:p:h")
+	let content	= system("cd " . l:wd . ";svn blame " . l:file . " | awk 'NR==" . l:line . "{print}' " . ' | sed -n -e "s/\s\+\([0-9]\+\)\s\+\(\S\+\).*/\2 (\1)/p"' )
+	let line		= split(content, '\n')[0]
+	echohl Type | echo line | echohl None
 endfunction
 
 function! GitBlameCurrentLine()
-  let l:line  = line('.')
-  let l:file  = expand("%:t")
-  let l:wd    = expand("%:p:h")
-  let content = system("cd " . l:wd . ";git blame -L ". l:line . "," . l:line . " " . l:file . " | sed 's/).*/)/'")
-  let line = split(content, '\n')[0]
-  echohl Type | echo line | echohl None
+	let l:line	= line('.')
+	let l:file	= expand("%:t")
+	let l:wd		= expand("%:p:h")
+	let content	= system("cd " . l:wd . ";git blame -L ". l:line . "," . l:line . " " . l:file . " | sed 's/).*/)/'")
+	let line		= split(content, '\n')[0]
+	echohl Type | echo line | echohl None
 endfunction
 
 function! BlameCurrentLine()
