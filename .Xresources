@@ -10,4 +10,7 @@
 *VT100*faceSize5: 14
 *VT100*faceSize6: 15
 
+XTerm*VT100*geometry: 180x60
+
+XTerm*scrollBar: true
 *VT100*scrollTtyOutput: false
