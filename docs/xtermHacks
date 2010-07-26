@@ -1,0 +1,2 @@
+sudo update-alternatives –config x-terminal-emulator to change terminal emulator from gnome-terminal to xterm
+xrdb -load .Xresource te load Xresource file
