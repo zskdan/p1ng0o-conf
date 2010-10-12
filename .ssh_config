@@ -17,6 +17,7 @@ host p1ng0o
 	user zakaria
 	port 2222
 	Compression yes
+	ForwardX11 yes
 
 host projects.openwide.fr
 	hostname git.projects.openwide.fr
