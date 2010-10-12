@@ -35,12 +35,22 @@ let g:BASH_Company      = 'OpenWide, Paris'
 let g:sh_fold_enabled		= 1
 
 function! SvnBlameCurrentLine()
-	let l:line	= line('.')
-	let l:file	= expand("%:t")
-	let l:wd		= expand("%:p:h")
-	let content	= system("cd " . l:wd . ";svn blame " . l:file . " | awk 'NR==" . l:line . "{print}' " . ' | sed -n -e "s/\s\+\([0-9]\+\)\s\+\(\S\+\).*/\2 (\1)/p"' )
-	let line		= split(content, '\n')[0]
-	echohl Type | echo line | echohl None
+	let getusersagem = "/home/zakaria/bin/getuser_sagem.py"
+	let l:line		= line('.')
+	let l:file		= expand("%:t")
+	let l:wd			= expand("%:p:h")
+	let content		= system("cd " . l:wd . ";svn blame " . l:file . " | awk 'NR==" . l:line . "{print}' " . ' | sed -n -e "s/\s\+\([0-9]\+\)\s\+\(\S\+\).*/\2 (rev\1)/p"' )
+	let line			= split(content, '\n')[0]
+	let matricule = split(line, ' ')[0]
+	let revision	= split(line, ' ')[1]
+
+	if !executable(getusersagem)
+			let username = line
+	else
+			let sagemline = system(getusersagem . " " . matricule . ' | sed -n -e "s/\([a-z][0-9]\{6\}\)\s\+=\s\+\(.*\)/\2 [\1]/p"' )
+			let username	= split(sagemline, '\n')[0]
+	endif
+	echohl Type | echo username . revision | echohl None
 endfunction
 
 function! GitBlameCurrentLine()
