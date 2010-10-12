@@ -1,8 +1,21 @@
 q<letter><commands>q
 <number>@<letter>
+
+##########
+Editing
+#########
 CRTL-R Redo
 ctrl-a increment
 ctrl-x decrement
+J	join this line to the next line
+5J	join 5 lines 
+!]]sort -u | cat -n	sort all lines from cursor downwards, deleting duplicates, and number the lines
+D          delete to the end of the line from the cursor
+xp	exchange two characters (actually the two commands x=delete and p=paste) 
+gu/gU Un/Capitalize word
+#######
+Moving
+#######
 K   Go to the man page for the word currently under the cursor
 %   Putting the cursor on a brace, bracket, or parenthese and pressing % will send the cursor to the matching brace, bracket, or parenthese.
 >>    Indent the highlighted code.
@@ -30,9 +43,15 @@ dp	:diffput
 Modes
 #####################
 hexeditor mode :
-
 vim -b myfile
 [in vi]: %!xxd
 [to return to previous view]: %!xxd -r
 :set list  Show tabs & end of lines 
-
+ZZ       to save and quit (a shortcut for :wq Rtn)
+^G	show the current filename and status and line number
+:set nu Rtn	show all line numbers (``:set nonu'' gets rid of the numbers)
+#################
+IO
+###############
+:12,17w filename Rtn	write lines #12-17 of the current text to a (new) text file
+:r filename Rtn	read (and insert) contents of a text file 
