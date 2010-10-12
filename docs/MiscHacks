@@ -17,3 +17,7 @@ disable the bootup kernel messages add to the "append" line in the isolinux.cfg 
 
 To disable the kernel messages on the console use "setterm -msg off" add it to the runme.sh
 To test it, enter it at the console.
+
+for locales in samba shares some charactere are display incorrectly : 
+	http://forum.ubuntu-fr.org/viewtopic.php?id=49412
+	 we must use codepage=cp850,iocharset=utf-8 as option for cifs mount
