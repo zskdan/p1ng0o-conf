@@ -22,6 +22,7 @@ set shiftwidth=4    " number of spaces per shift
 
 set showmatch       " brace matching
 syntax on           " syntax highlighting
+highlight Comment ctermfg=DarkGreen  " setting the fg color of text treated as comment
 
 set incsearch       " incremental search
 set ignorecase      " search ignores case
