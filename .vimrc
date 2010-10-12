@@ -81,3 +81,5 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType perl set omnifunc=perlcomplete#Complete
 
+" status line
+set laststatus=2
