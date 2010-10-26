@@ -1,0 +1,1 @@
+make install DESTDIR=PATH : for installing on a custom path

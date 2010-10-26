@@ -1,0 +1,50 @@
+
+git rebase -i --abort # to intterumpt rebasing "interactive rebase already started"
+
+# restoring the repository
+git reflog
+git reset --hard HEAD@{n}
+
+# git svn
+git svn init URL
+git fetch --authors-file=../authors-file
+
+# Reset your master to trunk (or any other branch, replacing ´trunk´
+# with the appropriate name):
+git reset --hard remotes/trunk
+
+# git svn workflow snapshot to updated with offciel git repo.
+git svn init --branches=BO/branches --tags=BO/tags http://forge-urd44.osn.sagem/svn/buildroot-build-buildroot
+git svn fetch --authors-file=../sagem-authors-file
+git checkout --track -b buildroot_v2009-11  remotes/BO_buildroot-build-buildroot_v2009-11
+git checkout --track -b buildroot_sagem  remotes/BO_buildroot-build-buildroot_sagem
+git remote add upstream git://git.busybox.net/buildroot
+git fetch upstream
+git checkout -b upstream_2009.11 2009.11
+git checkout buildroot_v2009-11
+git merge upstream_2009.11
+git mergetool -t vimdiff
+git commit
+git svn dcommit -e
+git checkout -b upstream_2010.02 2010.02
+git checkout -b buildroot_v2010-02 --track BO_buildroot-build-buildroot_v2010-02
+git merge upstream_2010.02
+git commit
+git svn dcommit -e
+git svn branch BO_buildroot-build-buildroot_v2010-05 -m "linking with the officiel v2010-05 branch #TEMPORARY_DO_NOT_CHECK_GRAMMAR"
+git checkout -b buildroot_v2010-05 --track BO_buildroot-build-buildroot_v2010-05
+git checkout -b upstream_2010.05 2010.05
+git merge upstream_2010.05
+git mergetool -t vimdiff
+git commit
+git svn dcommit -e
+
+# Saving your neck when git-svn dcommit fails
+1. Open .git/logs/HEAD
+2. Look for your most recent commit (note that these commits are sorted by “unix time”, although you can also find the latest one by reading the shortlog there
+3. Confirm that the commit you found is the right one: git show
+4. git reset --hard hash from log
+5. git svn rebase
+6. git svn dcommit
+
+

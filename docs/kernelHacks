@@ -1,0 +1,5 @@
+kernel stack size is 8ko:
+	http://kerneltrap.org/node/6399 .
+	http://www.linuxquestions.org/questions/linux-newbie-8/how-do-you-increase-a-kernel-stack-size-281780/
+
+user_debug=31 at kernel commandline to get more specific kernel message for userland progs

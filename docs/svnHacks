@@ -1,0 +1,4 @@
+1. svn merge --dry-run -r:73:68 http://my.repository.com/my/project/trunk
+2. svn merge -r:73:68 http://my.repository.com/my/project/trunk
+3. svn commit -m "Reverted to revision 68."
+

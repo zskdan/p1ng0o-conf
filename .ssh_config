@@ -1,6 +1,28 @@
+host chep
+	hostname 190.99.4.2
+	user zakaria
 
+host home
+	user root
+	Compression yes
+
+host pingoo
+	hostname 192.168.1.179
+	ProxyCommand ssh home nc %h %p
+	user zakaria
+	Compression yes
+
+host p1ng0o
+	hostname pingoo
+	user zakaria
+	port 2222
+	Compression yes
+	ForwardX11 yes
 
 host projects.openwide.fr
-  hostname git.projects.openwide.fr
-  user zelqotbi
+	hostname git.projects.openwide.fr
+	user zelqotbi
 
+host rmm
+	hostname rmm-p1267090
+	ForwardX11 yes

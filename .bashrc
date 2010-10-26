@@ -103,9 +103,18 @@ if [ -f /etc/bashrc ]; then
   . /etc/bashrc
 fi
 
+# loading confs
+if [ -d "$HOME/conf/scripts"  ]; then
+	for script in  $HOME/conf/scripts/S*
+	do
+		source $script
+	done
+fi
+
 # User specific aliases and functions
 PS1='\[\e[0;34m\]\133\[\e[m\]\[\e[0;33m\]\u@\h: \W\[\e[m\]\[\e[0;34m\]\135\[\e[m\]\[\e[0;37m\]\$\[\e[m\] '
-PATH=$PATH:~/.binpath/
+proml
+PATH=~/bin:$PATH
 GIT_AUTHOR_NAME="Zakaria ElQotbi"
 GIT_AUTHOR_EMAIL="zakaria.elqotbi@openwide.fr"
 
