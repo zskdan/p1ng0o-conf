@@ -83,6 +83,9 @@ map T :TaskList<CR>
 " mapping for taglist
 nnoremap <silent> <F8> :TlistToggle<CR>
 
+" map for yanking to system clipboard
+map <C-c> "*y<CR>
+
 set visualbell
 autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
