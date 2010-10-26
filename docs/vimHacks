@@ -55,3 +55,8 @@ IO
 ###############
 :12,17w filename Rtn	write lines #12-17 of the current text to a (new) text file
 :r filename Rtn	read (and insert) contents of a text file 
+#### Clipboard
+
+* "+2yy ? copy two lines to X11 clipboard
+* "+dd ? cut line to X11 clipboard
+* "+p ? paste X11 clipboard
