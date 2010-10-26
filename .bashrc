@@ -117,6 +117,7 @@ proml
 PATH=~/bin:$PATH
 GIT_AUTHOR_NAME="Zakaria ElQotbi"
 GIT_AUTHOR_EMAIL="zakaria.elqotbi@openwide.fr"
+EDITOR="vim"
 
 #if [ "$TERM" != "screen" ]; then
 #  screen
