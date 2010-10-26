@@ -93,3 +93,5 @@ attrcolor b ".I"
 
 #screen -t mcabber 0 mcabber
 #screen -t mutt 1 mutt
+escape ^A^A
+bind o other
