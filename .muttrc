@@ -1,17 +1,24 @@
 set realname 			= "Zakaria ElQotbi"
-set my_user  				= "zakaria.elqotbi@sagemcom.com"
+set imap_user			= "zakaria.elqotbi@sagemcom.com"
 
-set from		 			= "$my_user"
+set from		 			= "$imap_user"
 set use_from 			= yes
 #set edit_headers = yes
 
-set my_serv 		= chelm01sc.ads.local
+set my_serv 			= chelm01sc.ads.local
 
-set spoolfile			= imap://$my_user@$my_serv/INBOX
-set folder				= imap://$my_user@$my_serv/
+set spoolfile			= imap://$imap_user@$my_serv/INBOX
+set folder				= imap://$imap_user@$my_serv/
+set record				= "=Sent"
+set postponed			= "=Drafts"
+set trash					= "=Trash"
+set mbox					= "$HOME/mail/mbox"
 set mail_check		= 10
+fcc-hook 				 .* "imap://$imap_user@$my_serv/Sent"
+set move					= no
 
-fcc-hook 				 .* "imap://$my_user@$my_serv/Sent"
+mailboxes					= inbox
+mailboxes					= mbox
 
 set status_format	= " %r %b %f %n      Del %d      Msgs %m %l %> (%P)"
 set pager_format	= "%-10.10i %[!%a %b %d %R]"
@@ -23,6 +30,11 @@ set sendmail			= "/usr/bin/nbsmtp -h vzy08031.vzy.sagem -f zakaria.elqotbi@sagem
 set editor				= "/usr/bin/vim -u ~/.mutt_files/vim.mutt"
 set editor				= "vim"
 set ispell				= "aspell -e -c"
+set query_command	= "abook --mutt-query '%s'"
 
+set signature			= '~/.signature'
+set alias_file		= '~/.mutt_files/aliases'
+
+source ~/.mutt_files/aliases
 source ~/.mutt_files/gpg.mutt
 
