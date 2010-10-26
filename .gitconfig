@@ -15,6 +15,3 @@
 	untracked = cyan
 [core]
 	whitespace=fix,-ident-with-non-tab,trailing-space,cr-at-eol
-[user]
-	email = zakaria.elqotbi@openwide.fr
-	name = Zakaria Elqotbi
