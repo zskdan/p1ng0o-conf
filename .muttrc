@@ -1,0 +1,28 @@
+set realname 			= "Zakaria ElQotbi"
+set my_user  				= "zakaria.elqotbi@sagemcom.com"
+
+set from		 			= "$my_user"
+set use_from 			= yes
+#set edit_headers = yes
+
+set my_serv 		= chelm01sc.ads.local
+
+set spoolfile			= imap://$my_user@$my_serv/INBOX
+set folder				= imap://$my_user@$my_serv/
+set mail_check		= 10
+
+fcc-hook 				 .* "imap://$my_user@$my_serv/Sent"
+
+set status_format	= " %r %b %f %n      Del %d      Msgs %m %l %> (%P)"
+set pager_format	= "%-10.10i %[!%a %b %d %R]"
+set date_format		= "!%H:%M %a %d %b     "
+set index_format	= "%4C %Z %[%b%d] %-15.15F %s"
+set folder_format	= "%2C %t %8s %d %N %f"
+
+set sendmail			= "/usr/bin/nbsmtp -h vzy08031.vzy.sagem -f zakaria.elqotbi@sagemcom.com"
+set editor				= "/usr/bin/vim -u ~/.mutt_files/vim.mutt"
+set editor				= "vim"
+set ispell				= "aspell -e -c"
+
+source ~/.mutt_files/gpg.mutt
+
